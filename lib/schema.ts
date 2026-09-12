@@ -16,8 +16,8 @@ export function generateLocalBusinessSchema() {
     logo: {
       '@type': 'ImageObject',
       url: `${BUSINESS_INFO.website}/logo.webp`,
-      width: 200,
-      height: 200,
+      width: 1254,
+      height: 1254,
     },
     address: {
       '@type': 'PostalAddress',

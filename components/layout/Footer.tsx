@@ -65,7 +65,7 @@ export function Footer() {
             <Link href="/" className="flex items-center gap-3 mb-5">
               <Image
                 src="/logo.webp"
-                alt="Quran Center UK — Ijazah-Certified Quran Classes Manchester"
+                alt="Online Quran Teacher — Hafiz Raza, MA Arabic &amp; Hafiz ul Quran, Manchester UK"
                 width={56}
                 height={56}
                 sizes="56px"

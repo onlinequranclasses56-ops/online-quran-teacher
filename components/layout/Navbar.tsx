@@ -85,7 +85,7 @@ export function Navbar() {
           <Link href="/" className="flex items-center gap-2 group">
             <Image
               src="/logo.webp"
-              alt="Quran Center UK — Ijazah-Certified Quran Classes Manchester"
+              alt="Online Quran Teacher — Hafiz Raza, MA Arabic &amp; Hafiz ul Quran, Manchester UK"
               width={48}
               height={48}
               sizes="48px"
