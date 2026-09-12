@@ -61,7 +61,7 @@ export const BUSINESS_INFO = {
     linkedin: 'https://www.linkedin.com/company/quran-center-uk/',
   },
   stats: {
-    students: '1,200+',
+    students: '50+',
     teachers: '20+',
     yearsExperience: '10+',
     rating: '4.9',

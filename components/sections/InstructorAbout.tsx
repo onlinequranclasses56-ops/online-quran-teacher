@@ -2,10 +2,12 @@
 
 import { useRef } from 'react'
 import { motion, useInView } from 'framer-motion'
-import { BadgeCheck, MessageCircle, BookOpen, Users, Clock, Star } from 'lucide-react'
+import Image from 'next/image'
+import { BadgeCheck, MessageCircle, BookOpen, Users, Clock, Star, GraduationCap } from 'lucide-react'
 import { BUSINESS_INFO } from '@/lib/utils'
 
 const expertise = [
+  'Arabic Language (MA Level)',
   'Quran Recitation (Nazra)',
   'Tajweed Rules & Correction',
   'Hifz ul Quran (Memorisation)',
@@ -17,13 +19,12 @@ const expertise = [
   'Online Quran Teaching',
   'Flexible Scheduling',
   'Affordable Pricing',
-  'Beginner to Advanced',
 ]
 
 const highlights = [
-  { icon: BookOpen, label: 'Hafiz ul Quran — Full Quran Memorised', color: 'text-gold' },
+  { icon: GraduationCap, label: "Master's Degree in Arabic Language (MA Arabic)", color: 'text-gold' },
+  { icon: BookOpen, label: 'Hafiz ul Quran — Full Quran Memorised', color: 'text-emerald-400' },
   { icon: BadgeCheck, label: 'Tajweed Certified Teacher', color: 'text-green-400' },
-  { icon: Users, label: 'Male & Female Teachers Available', color: 'text-blue-400' },
   { icon: Clock, label: '5 Years Teaching Experience', color: 'text-purple-400' },
 ]
 
@@ -51,11 +52,11 @@ export function InstructorAbout() {
           </span>
           <h2 className="font-heading text-3xl md:text-4xl font-bold text-dark dark:text-white mb-4">
             Learn from a{' '}
-            <span className="gradient-text">Certified Hafiz & Tajweed Teacher</span>
+            <span className="gradient-text">MA Arabic Graduate & Hafiz ul Quran</span>
           </h2>
           <p className="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
-            Hafiz Raza brings 5 years of Quran teaching experience — affordable, flexible,
-            and dedicated to helping every student learn at their own pace.
+            Hafiz Raza holds a Master&apos;s degree in Arabic Language and is a certified Hafiz ul Quran — bringing
+            academic excellence and 5 years of teaching experience to every class.
           </p>
         </motion.div>
 
@@ -68,17 +69,22 @@ export function InstructorAbout() {
             transition={{ duration: 0.6 }}
             className="lg:col-span-2 flex flex-col items-center lg:items-start gap-6"
           >
-            {/* Avatar card */}
+            {/* Instructor photo card */}
             <div className="relative w-full max-w-xs">
               <div className="absolute -inset-1 bg-gold-gradient rounded-3xl blur opacity-20" />
               <div className="relative rounded-3xl overflow-hidden border-2 border-gold/30">
-                <div className="h-64 w-full bg-gradient-to-br from-primary-900 to-dark flex flex-col items-center justify-center gap-4">
-                  <div className="w-28 h-28 rounded-full bg-gold/20 border-4 border-gold/50 flex items-center justify-center shadow-xl">
-                    <span className="text-gold font-heading font-bold text-5xl">HR</span>
-                  </div>
-                  <div className="text-center px-4">
-                    <p className="text-white font-heading font-bold text-xl">Hafiz Raza</p>
-                    <p className="text-gold text-xs font-medium mt-1">Hafiz ul Quran · Tajweed Specialist</p>
+                <div className="relative h-72 w-full">
+                  <Image
+                    src="/hafiz-raza-online-quran-teacher-manchester.webp"
+                    alt="Hafiz Raza — MA Arabic graduate and certified Hafiz ul Quran, lead Quran teacher at Quran Center UK Manchester"
+                    fill
+                    sizes="320px"
+                    className="object-cover object-top"
+                  />
+                  <div className="absolute bottom-0 left-0 right-0 h-20 bg-gradient-to-t from-dark/90 to-transparent" />
+                  <div className="absolute bottom-3 left-0 right-0 text-center px-4">
+                    <p className="text-white font-heading font-bold text-lg leading-tight">Hafiz Raza</p>
+                    <p className="text-gold text-xs font-medium mt-0.5">MA Arabic · Hafiz ul Quran · Tajweed</p>
                   </div>
                 </div>
               </div>
@@ -138,25 +144,25 @@ export function InstructorAbout() {
           >
             <div className="prose prose-gray dark:prose-invert max-w-none mb-8">
               <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
-                Hafiz Raza is a certified <strong>Hafiz ul Quran</strong> — he has memorised the complete
-                Holy Quran — and a qualified Tajweed teacher with over <strong>10 years of experience</strong>
-                teaching students of all ages and backgrounds online and in Manchester.
+                Hafiz Raza holds a <strong>Master&apos;s Degree in Arabic Language (MA Arabic)</strong> and is a
+                certified <strong>Hafiz ul Quran</strong> — having memorised the complete Holy Quran. This combination
+                of formal academic Arabic scholarship and full Quranic memorisation places him among
+                the most qualified Quran teachers available in the UK.
               </p>
               <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
-                He specialises in teaching children from a very young age through Noorani Qaida and Quran
-                reading, as well as guiding adults who are starting from scratch. His teaching approach
-                is <strong>patient, structured, and personalised</strong> — he adapts to each student's
-                pace rather than rushing through material.
+                With <strong>5 years of dedicated teaching experience</strong>, he specialises in Tajweed, Hifz
+                programmes, Noorani Qaida for beginners, and Arabic language instruction — teaching children
+                from age 4 right through to adults. His MA in Arabic means he can explain Quranic grammar,
+                vocabulary, and classical Arabic in a way few teachers can.
               </p>
               <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
-                The centre also has qualified <strong>female teachers</strong> available for sisters and
-                female students who prefer a same-gender learning environment — ensuring everyone can
-                learn in a comfortable, Islamic setting.
+                His approach is <strong>patient, structured, and personalised</strong> — adapting to each
+                student&apos;s pace and learning style. The centre also has qualified <strong>female teachers</strong> available
+                for sisters who prefer a same-gender environment.
               </p>
               <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
-                All courses are offered at <strong>affordable prices</strong> with flexible scheduling —
-                morning, afternoon, and evening slots available 7 days a week. The first trial class is
-                completely free with no commitment required.
+                All courses are offered at <strong>affordable prices</strong> with flexible morning, afternoon,
+                and evening slots — 7 days a week. The first trial class is completely free with no commitment.
               </p>
             </div>
 

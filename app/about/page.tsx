@@ -15,9 +15,13 @@ export const metadata: Metadata = createMetadata({
     'Learn about Quran Center UK — our mission, vision, teaching methodology, and the qualified team dedicated to bringing quality Quranic education to Muslims across the UK.',
   keywords: [
     'About Quran Center UK',
+    'Hafiz Raza Quran Teacher Manchester',
+    'Master in Arabic Language Quran Teacher',
+    'Hafiz ul Quran Teacher UK',
     'Islamic Education UK',
     'Quran Academy Manchester',
     'Qualified Quran Teachers',
+    'Arabic Language Teacher UK',
   ],
   path: '/about',
 })
@@ -116,13 +120,13 @@ export default function AboutPage() {
                 Quran Center UK was founded in 2014 in the heart of Levenshulme, Manchester, with a
                 simple but powerful mission: to make quality Quranic education accessible to every
                 Muslim family in the UK. What began as a small community class has grown into a
-                thriving centre serving over 1,200 students.
+                thriving centre serving students across Manchester and online UK-wide.
               </p>
               <p className="text-gray-600 dark:text-gray-400 leading-relaxed mb-4">
-                Our founder, a qualified Hafiz and experienced educator, recognised the need for a
-                modern, professional Islamic education centre that combined traditional teaching
-                methods with the needs of today&apos;s Muslim families. A centre where children would
-                enjoy learning, adults would feel welcome, and parents would trust the environment.
+                Our founder, Hafiz Raza, holds a <strong>Master&apos;s Degree in Arabic Language (MA Arabic)</strong> and
+                is a certified <strong>Hafiz ul Quran</strong> — having memorised the complete Holy Quran. Combining
+                postgraduate academic training with deep religious scholarship, he built a centre where
+                children enjoy learning, adults feel welcome, and parents trust the environment.
               </p>
               <p className="text-gray-600 dark:text-gray-400 leading-relaxed mb-8">
                 Today, Quran Center UK offers a comprehensive range of courses — from Noorani Qaida
@@ -133,7 +137,7 @@ export default function AboutPage() {
               <div className="grid grid-cols-2 gap-4">
                 {[
                   { n: '2014', l: 'Founded' },
-                  { n: '1,200+', l: 'Students' },
+                  { n: '50+', l: 'Students' },
                   { n: '20+', l: 'Teachers' },
                   { n: '247', l: 'Reviews' },
                 ].map(s => (

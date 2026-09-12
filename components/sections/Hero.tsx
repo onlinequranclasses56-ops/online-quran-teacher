@@ -2,21 +2,22 @@
 
 import { motion } from 'framer-motion'
 import Link from 'next/link'
+import Image from 'next/image'
 import { ArrowRight, Star, CheckCircle2, Phone, MessageCircle, Linkedin, BadgeCheck, CalendarCheck } from 'lucide-react'
 import { BUSINESS_INFO, FREE_TRIAL_WHATSAPP } from '@/lib/utils'
 
 const trustBadges = [
-  '1,200+ Students',
+  '50+ Students',
   'Hafiz ul Quran Certified',
   'Affordable Prices',
   'Male & Female Teachers',
 ]
 
 const credentials = [
-  'Hafiz ul Quran (Full Memorisation)',
+  "Master's Degree in Arabic Language (MA Arabic)",
+  'Hafiz ul Quran (Full Quran Memorised)',
   'Tajweed Certified Teacher',
   'Hifz Programme Supervisor',
-  'Male & Female Teachers Available',
 ]
 
 const fadeUp = {
@@ -115,7 +116,7 @@ export function Hero() {
               transition={{ duration: 0.6, delay: 0.3 }}
               className="text-white/75 text-lg leading-relaxed mb-8"
             >
-              Join over <strong className="text-white">1,200+ students</strong> learning Quran, Tajweed, Hifz &amp; Islamic
+              Join over <strong className="text-white">50+ students</strong> learning Quran, Tajweed, Hifz &amp; Islamic
               Studies online and in Manchester — affordable prices, male &amp; female teachers available.
             </motion.p>
 
@@ -192,16 +193,16 @@ export function Hero() {
               <div className="absolute -inset-1 bg-gold-gradient rounded-3xl blur opacity-30" />
 
               <div className="relative bg-white/10 backdrop-blur-md border border-gold/30 rounded-3xl overflow-hidden">
-                {/* Avatar */}
-                <div className="relative h-72 sm:h-80 w-full bg-gradient-to-b from-primary-900/50 to-dark/80 flex items-center justify-center">
-                  <div className="flex flex-col items-center gap-3">
-                    <div className="w-28 h-28 rounded-full bg-gold/20 border-4 border-gold/60 flex items-center justify-center shadow-lg">
-                      <span className="text-gold font-heading font-bold text-4xl">HR</span>
-                    </div>
-                    <div className="text-center px-4">
-                      <p className="text-white/60 text-xs">Head Instructor</p>
-                    </div>
-                  </div>
+                {/* Instructor photo */}
+                <div className="relative h-72 sm:h-80 w-full overflow-hidden">
+                  <Image
+                    src="/hafiz-raza-online-quran-teacher-manchester.webp"
+                    alt="Hafiz Raza — certified online Quran teacher offering classes in Manchester and UK-wide"
+                    fill
+                    sizes="(max-width: 640px) 100vw, 384px"
+                    className="object-cover object-top"
+                    priority
+                  />
                   {/* Gold overlay at bottom */}
                   <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-dark/90 to-transparent" />
 
@@ -219,7 +220,7 @@ export function Hero() {
                         Hafiz Raza
                       </h2>
                       <p className="text-gold text-xs font-semibold mt-0.5">
-                        Head Instructor · Hafiz ul Quran · Tajweed Specialist
+                        MA Arabic · Hafiz ul Quran · Tajweed Specialist
                       </p>
                     </div>
                     <div className="flex items-center gap-1 bg-white/10 px-2 py-1 rounded-lg shrink-0">

@@ -61,10 +61,10 @@ export const metadata: Metadata = {
       'Learn Quran with Hafiz Raza — certified Hafiz ul Quran & Tajweed teacher. Affordable prices. Male & female teachers. Tajweed, Hifz, Noorani Qaida for all ages.',
     images: [
       {
-        url: `${BUSINESS_INFO.website}/logo.webp`,
-        width: 512,
-        height: 512,
-        alt: 'Quran Center UK — Affordable Quran Classes Manchester & Online UK',
+        url: `${BUSINESS_INFO.website}/hafiz-raza-online-quran-teacher-manchester.webp`,
+        width: 1080,
+        height: 1080,
+        alt: 'Hafiz Raza — certified online Quran teacher offering affordable classes in Manchester and across the UK',
         type: 'image/webp',
       },
     ],
@@ -73,7 +73,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Quran Center UK | Affordable Quran Classes Manchester & Online',
     description: 'Learn Quran with Hafiz Raza — certified Hafiz & Tajweed teacher. Affordable prices. Male & female teachers. Book your FREE trial.',
-    images: [`${BUSINESS_INFO.website}/logo.webp`],
+    images: [`${BUSINESS_INFO.website}/hafiz-raza-online-quran-teacher-manchester.webp`],
     creator: '@qurancenteruk',
   },
   robots: {

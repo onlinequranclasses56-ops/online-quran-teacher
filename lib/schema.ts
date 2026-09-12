@@ -149,10 +149,10 @@ export function generateInstructorSchema() {
     '@type': 'Person',
     '@id': `${BUSINESS_INFO.website}/#instructor`,
     name: 'Hafiz Raza',
-    jobTitle: 'Head Quran Instructor & Tajweed Specialist',
+    jobTitle: "Head Quran Instructor — MA Arabic, Hafiz ul Quran & Tajweed Specialist",
     description:
-      'Hafiz ul Quran and certified Tajweed teacher with 5 years of experience teaching children and adults online and in Manchester. Specialist in Hifz programmes, Noorani Qaida, and Quran for kids.',
-    image: `${BUSINESS_INFO.website}/logo.webp`,
+      "Hafiz Raza holds a Master's Degree in Arabic Language (MA Arabic) and is a certified Hafiz ul Quran with 5 years of experience teaching Quran, Tajweed, Hifz, and Arabic to children and adults online and in Manchester.",
+    image: `${BUSINESS_INFO.website}/hafiz-raza-online-quran-teacher-manchester.webp`,
     url: `${BUSINESS_INFO.website}/about`,
     telephone: BUSINESS_INFO.phone,
     email: BUSINESS_INFO.email,
@@ -163,6 +163,12 @@ export function generateInstructorSchema() {
       addressCountry: 'GB',
     },
     hasCredential: [
+      {
+        '@type': 'EducationalOccupationalCredential',
+        credentialCategory: 'degree',
+        name: "Master's Degree in Arabic Language",
+        description: "Postgraduate Master's degree (MA) in Arabic Language — formal academic qualification in classical and modern Arabic",
+      },
       {
         '@type': 'EducationalOccupationalCredential',
         credentialCategory: 'certification',
@@ -177,6 +183,9 @@ export function generateInstructorSchema() {
       },
     ],
     knowsAbout: [
+      'Arabic Language',
+      'Classical Arabic Grammar',
+      'Quranic Arabic',
       'Quran Recitation & Tajweed',
       'Hifz ul Quran',
       'Noorani Qaida',
